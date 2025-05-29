@@ -2,7 +2,9 @@ function App() {
 
   return (
     <>
-      <div className='bg-black text-white h-screen w-screen'>food-delivery-app</div>
+      <div className='min-h-[100vh] bg-black text-white'>
+        Hello World 
+      </div>
     </>
   )
 }
