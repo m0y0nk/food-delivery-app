@@ -1,7 +1,9 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { assets } from '../../assets/assets.js'
 
 const Navbar = () => {
+    const [menu, setMenu] = useState('home');
+
   return (
     <div className='flex flex-row justify-between items-center'>
         <div>
@@ -9,10 +11,10 @@ const Navbar = () => {
         </div>
         <div>
             <ul className='flex flex-row gap-4'>
-                <li>home</li>
-                <li>menu</li>
-                <li>mobile app</li>
-                <li>contact us</li>
+                <li className={`header_link ${menu==='home' ? 'active' : 'inactive'}`} onClick={()=>setMenu('home')}>home</li>
+                <li className={`header_link ${menu==='menu' ? 'active' : 'inactive'}`}  onClick={()=>setMenu('menu')}>menu</li>
+                <li className={`header_link ${menu==='mobile_app' ? 'active' : 'inactive'}`}  onClick={()=>setMenu('mobile_app')}>mobile app</li>
+                <li className={`header_link ${menu==='contact_us' ? 'active' : 'inactive'}`}  onClick={()=>setMenu('contact_us')}>contact us</li>
             </ul>
         </div>
         <div className='flex flex-row gap-6 items-center'>

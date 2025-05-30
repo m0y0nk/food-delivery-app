@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+    --color-tomato: #ff4d23
+}
+
 @layer base {
     *{
         margin: 0;
@@ -14,4 +18,15 @@
         text-decoration: none;
         color: inherit
     }
+    /* li:hover {
+        scale: 1.1;
+    } */
+}
+
+.header_link {
+    @apply hover:scale-110;
+}
+
+.active {
+    @apply text-tomato text-xl
 }
