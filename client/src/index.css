@@ -18,9 +18,6 @@
         text-decoration: none;
         color: inherit
     }
-    /* li:hover {
-        scale: 1.1;
-    } */
 }
 
 .header_link {
@@ -29,4 +26,11 @@
 
 .active {
     @apply text-tomato text-xl
+}
+
+.header {
+    @apply h-[34vh] text-white w-[80%] absolute left-[10%] right-[10%] rounded-2xl top-[10%];
+    background-image: url('/header_img.png');
+    background-size: cover;
+    background-position: center;
 }
