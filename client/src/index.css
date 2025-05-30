@@ -29,8 +29,17 @@
 }
 
 .header {
-    @apply h-[34vh] text-white w-[80%] absolute left-[10%] right-[10%] rounded-2xl top-[10%];
+    @apply h-[48px] my-16 text-white rounded-2xl;
     background-image: url('/header_img.png');
     background-size: cover;
     background-position: center;
+}
+
+.header-content {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
